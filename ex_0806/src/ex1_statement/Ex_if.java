@@ -14,17 +14,21 @@ public class Ex_if {
         //조건식이 참일 때 실행되는 영역
         //}
 
-        int n =50;
-        String str = "안녕하세요";//String - 클래스
-        //클래스로 생성한것은 객체라고 불리는데 String은 예외
-        //여러글자(문자열)을 넣을수 있는 자료형이라고 생각하기(지금은)
+        int n = 49; // 정수형 변수 n을 49로 초기화
 
-        if( n != 50 ){
-            System.out.println(str);
+        String str = ""; // 문자열 변수 str을 빈 문자열로 초기화 (String은 클래스이지만 예외적으로 객체라 부르지 않음)
+        // String 타입은 여러 글자(문자열)를 저장할 수 있는 자료형
+        // String을 null로 초기화하기보다는 ""(빈 문자열)로 초기화하는 것이 좋다
+
+        // n이 50과 같으면 str에 "n은 50입니다"를 저장
+        if( n == 50 ){
             str = "n은 50입니다";
         }
-        System.out.println(str);
-        
-        
+        // n이 50과 다르면 str에 "n은 50이 아닙니다"를 저장
+        if( n != 50 ){
+            str = "n은 50이 아닙니다";
+        }
+
+        System.out.println(str); // str 변수에 저장된 문자열을 콘솔에 출력
     }
 }
