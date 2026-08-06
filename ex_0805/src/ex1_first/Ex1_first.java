@@ -1,7 +1,7 @@
 package ex1_first;
 
 public class Ex1_first {
-    //main 메서드 : 프로그램의 시작점
+    //main 메서드 : 프로그램의 시작점 aaaaaa
     //String[] args : 메서드의 매개변수
     //args : arguments의 약자
     //String : 문자열을 저장하는 자료형
