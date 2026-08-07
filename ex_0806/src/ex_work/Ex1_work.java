@@ -21,5 +21,9 @@ public class Ex1_work {
         str = age >= 15 || height >= 150 ? "탑승가능" : "탑승불가";
         System.out.println(str);
 
+        for( int i = 0; i < 10; i++){
+            System.out.println(++i);
+        }
+        System.out.println(i);
     }//main
 }
