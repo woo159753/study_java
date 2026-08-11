@@ -44,14 +44,23 @@ public class Ex1_work {
             System.out.println(year + "년은 평년입니다");
         }
         //-------------------------------
-        if(year % 400 == 0 ){
-            System.out.println(year + "년은 윤년입니다");
-        }else if(year % 100 == 0){
-            System.out.println(year + "년은 평년입니다");
-        }else if(year % 4 == 0){
-            System.out.println(year + "년은 윤년입니다");
+        if( year % 400 == 0 ){
+            System.out.println( year + "년은 윤년입니다" );
+        }else if( year % 100 == 0 ){
+            System.out.println( year + "년은 평년입니다" );
+        }else if( year % 4 == 0 ){
+            System.out.println( year + "년은 윤년입니다" );
         }else{
-            System.out.println(year + "년은 평년입니다");
+            System.out.println( year + "년은 평년입니다" );
+        }//else if문의 n번째 조건문이 실행되려면
+        // n-1 번째 조건문까지 거짓이라는 조건이 필요하다
+        //---------------------------------------------
+        //강사님이 짜신 코드가 가장 간결
+        boolean res = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+        if( res ){//res == true 와 같은 의미이다 -> if( !res )는 if(res == false)
+            System.out.println(year + "년은 윤년");
+        }else{
+            System.out.println(year + "년은 평년");
         }
     }//main
-}
+}//class
