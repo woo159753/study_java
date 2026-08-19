@@ -1,0 +1,48 @@
+package ex_work;
+
+import java.util.Scanner;
+
+public class Ex2_work {
+    public static void main(String[] args) {
+
+        //검색 : 조인성
+        //[조인성]
+        //모가디슈
+        //호프
+
+        //검색 : aaa
+        //해당 배우의 정보가 없습니다
+
+        String[][] actor = { {"[송강호]", "박쥐", "괴물", "관상"},
+                             {"[조인성]", "모가디슈", "호프"},
+                             {"[이병헌]", "레드", "광해", "놈놈놈"} };
+
+        int cnt = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("검색 : ");
+        String name = sc.next();
+        
+        Ex2_sub sub = new Ex2_sub();
+        sub.findActor(actor, name, cnt);
+        //class 나눠 보기
+
+
+        /*
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("검색 : ");
+        String act = scanner.next();
+        Ex2_work1 co = new Ex2_work1();
+        int res = 0;
+
+        res = co.comparison(act);
+
+        if(res != 5){
+            for(int i = 0; i < actor[res].length; i++){
+            System.out.println(actor[res][i]);
+            }
+        }else{
+            System.out.println("해당배우의 정보가 없습니다");
+        }
+        */
+    }//main
+}
